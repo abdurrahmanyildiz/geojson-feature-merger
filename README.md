@@ -6,6 +6,7 @@ You can merge and create a new feature with neighboring features with this tool.
 - You need to add feature names with comma seperated
 - Once you click on Merge button tool will create a new feature.
 - You can check the new feature on <a href="https://geojson.io" target="blank">geojson.io</a> editor.
+- You can use Copy to Clipboard button to copy new feature.
 
 # Used Libraries
 - <a href="https://leafletjs.com" target="blank">Leaflet.js</a>
