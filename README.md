@@ -12,3 +12,7 @@ You can merge and create a new feature with neighboring features with this tool.
 - <a href="https://leafletjs.com" target="blank">Leaflet.js</a>
 - <a href="https://turfjs.org/" target="blank">turfjs.org</a>
 
+Following screen shot is result of merging Germany,Poland and Austria features:
+
+![Sample UI](https://github.com/abdurrahmanyildiz/geojson-feature-merger/blob/main/screen-shots/index.png)
+
