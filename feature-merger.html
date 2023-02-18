@@ -1,0 +1,43 @@
+<html>
+  <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+	<script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
+</head>
+ <body>   
+ <div class="container-fluid"> 
+ <div class="row mt-2">
+	 <div class="col-md-3">
+		<form>
+		  <div class="form-group">
+			<label for="geoJsonLink">GeoJson Source:</label>
+			<input type="text" class="form-control" id="geoJsonLink" placeholder="Enter GeoJson Url">		
+		  </div>
+		  <div class="form-group">
+			<label for="mergeList">Comma seperated country names:</label>
+			<input type="text" class="form-control" id="mergeList" placeholder="Enter Countries"
+				value="Germany,Poland,Austria">
+			<div class="d-flex justify-content-end">				
+				<button type="button" class="btn btn-sm btn-outline-primary mt-2" id="btnMap">Merge</button>
+			</div>			
+		  </div>
+		  <div class="form-group">
+			<label for="mergeResult">Merged/New Feature:</label>
+			<textarea id="mergeResult" class="form-control" cols="120" rows="7"></textarea>
+			<button type="button" id="btnCopy" class="btn btn-sm btn-outline-primary mt-2">Copy To Clipboard</button>
+			<p>
+			<a href="https://geojson.io" target="blank">geojson.io</a>
+			</p>
+		  </div>
+		</form>		
+	 </div>
+	 <div class="col-md-9">
+		<div id="map" style="width: 100%; height: 100%; position:fixed"></div>
+	 </div>
+ </div>	 
+ </div> 
+</body>
+<script src="main.js"></script>
+</html>
