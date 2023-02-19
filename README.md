@@ -16,3 +16,7 @@ Following screen shot is result of merging Germany,Poland and Austria features:
 
 ![Sample UI](https://github.com/abdurrahmanyildiz/geojson-feature-merger/blob/main/screen-shots/index.png)
 
+#openlayers #leaflet #turf #features #merge #union #polygon #geojson
+
+related SO question: https://stackoverflow.com/questions/68005988/geojson-turf-merge-multiple-polygons-to-one-polygon-keeping-hole
+
